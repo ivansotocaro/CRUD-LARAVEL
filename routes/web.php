@@ -16,10 +16,15 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::get('/', 'PagesController@index');
+Route::get('/', 'PagesController@index')->name('/');
 
-Route::get('/foto', 'PagesController@foto')->name('foto');
+//gauardar nueva nota
+Route::post('/crear', 'PagesController@crear')->name('crear');
 
-Route::get('/blog', 'PagesController@blog')->name('blog');
+Route::get('/actualizar/{id}', 'PagesController@actualizar')->name('actualizar');
 
-Route::get('/nosotros/{nombre?}', 'PagesController@nosotros')->name('nosotros');
+Route::put('/edit/{id}', 'PagesController@editar')->name('edit');
+
+Route::delete('/eliminar/{id}', 'PagesController@delete')->name('eliminar');
+
+

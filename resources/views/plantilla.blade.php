@@ -8,17 +8,13 @@
 </head>
 <body>
     
-    <div class="container mt-5">
-        <a href="{{ route('foto') }}" class="btn btn-danger">Fotos</a>
-        <a href="{{ route('blog') }}" class="btn btn-primary">Blog</a>
-        <a href="{{ route('nosotros') }}" class="btn btn-success">Nosotros</a>
-    </div>
+   
 
  <div class="container">
     @yield('seccion')
  </div>
 
-    <div class="container bg-dark text-white text-center">Footer</div>
+    <!-- <div class="container bg-dark text-white text-center">Footer</div> -->
 
 </body>
 </html>
