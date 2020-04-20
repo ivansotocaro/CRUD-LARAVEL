@@ -14,7 +14,7 @@
     @yield('seccion')
  </div>
 
-    <!-- <div class="container bg-dark text-white text-center">Footer</div> -->
+   <div class="container bg-dark text-white text-center">Footer</div> 
 
 </body>
 </html>

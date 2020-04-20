@@ -62,7 +62,7 @@
             NOTAS
         </h1>
 
-        <table class="table mt-5">
+        <table class="table mt-5 mb-5">
 
             <thead class="thead-dark">
                 <tr>
@@ -98,6 +98,7 @@
             </tbody>
 
         </table>
-
+        {{ $notas->links() }}
     </div>
+    
 @endsection
