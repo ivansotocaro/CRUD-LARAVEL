@@ -98,7 +98,7 @@
             </tbody>
 
         </table>
-        {{ $notas->links() }}
+        {{ $notas ?? ''->links() }}
     </div>
     
 @endsection

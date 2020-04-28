@@ -12,6 +12,7 @@ class PagesController extends Controller
     public function index()
     {
         $notas = App\Nota::paginate(3);
+     
         return view('welcome', compact('notas'));
     }
 
@@ -49,7 +50,7 @@ class PagesController extends Controller
         $notaeditar->descripcion = $request->descripcion;     
         $notaeditar->save();
        
-        return view('Actualizar');
+        return redirect('/');
 
     }
 
@@ -58,7 +59,7 @@ class PagesController extends Controller
         $notaeliminar = APP\Nota::findOrfail($id);
         $notaeliminar->delete();
 
-        return back();
+        return redirect('/');
     }
 
 

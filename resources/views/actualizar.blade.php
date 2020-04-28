@@ -36,7 +36,7 @@
                            value="{{ $nota->nombre }}">
 
                             <input type="text" class="form-control mb-4 " name="descripcion" placeholder="Descripción..."
-                            value="{{ $nota->descripcion }}">
+                            value="{{ $nota->descripcion  }}">
 
                             <button class="btn btn-outline-primary btn-block" type="submit">Editar Nota</button>
 
